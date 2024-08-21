@@ -48,9 +48,7 @@ const GwangshinWebsite = () => {
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <header className="sticky top-0 bg-primary text-primary-foreground py-4 z-10">
         <div className="container mx-auto px-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold">
-            Gwangshin Steel Industry Co., Ltd.
-          </h1>
+          <h1 className="text-2xl font-bold">광신철강산업(주)</h1>
           <nav className="hidden md:flex space-x-4">
             {navItems.map((item) => (
               <Button
@@ -117,10 +115,14 @@ const GwangshinWebsite = () => {
           <TabsContent value="home">
             <Card>
               <CardHeader>
-                <CardTitle>Welcome to Gwangshin Steel Industry</CardTitle>
+                <CardTitle>
+                  광신철강산업(주) 창업이념 고객감동 서비스 최고의 노력으로
+                  보답하는 기업!
+                </CardTitle>
                 <CardDescription>
-                  Leading the steel processing industry with innovation and
-                  quality since our establishment.
+                  고객만족을 사명으로 생각하는 기업, 고객의 성공이 우리의
+                  성공이라는 가치 아래 오늘 이 순간도 그 노력을 멈추지 않고
+                  있습니다.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -132,9 +134,9 @@ const GwangshinWebsite = () => {
                   />
                 </div>
                 <p className="mb-4">
-                  At Gwangshin, we specialize in rebar processing and mechanical
-                  rebar coupling, delivering top-tier solutions for construction
-                  projects of all scales.
+                  광신에서는 철근 가공 및 기계식 철근 커플링 분야를 전문으로
+                  하며, 모든 규모의 건설 프로젝트에 최고 수준의 솔루션을
+                  제공합니다.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
                   <div>
@@ -187,50 +189,55 @@ const GwangshinWebsite = () => {
           <TabsContent value="about">
             <Card>
               <CardHeader>
-                <CardTitle>About Gwangshin Steel Industry</CardTitle>
+                <CardTitle>회사 소개</CardTitle>
               </CardHeader>
               <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">
-                    Company History
-                  </h3>
+                  <h3 className="text-xl font-semibold mb-2">광신철강산업</h3>
                   <p className="mb-4">
-                    Gwangshin Steel Industry Co., Ltd. has been at the forefront
-                    of the steel processing industry since our inception in
-                    1995. We've grown from a small local supplier to a major
-                    player in the global steel industry.
+                    오늘날 건설공사는 수요자 중심의 친환경 정책으로 변모해 가고
+                    있으며, 이로 인하여 철근공사 또한 독창적이고 다양한 설계에
+                    따라 복잡 다양해지고 있습니다. 또한 외적요인으로는
+                    수입원자재 가격의 상승이 지속되고 있으며, 내적요인은 인건비
+                    상승 등의 요인으로 공사현장의 원가가 지속적으로 상승해 가고
+                    있습니다. 이로 인하여 기존의 현장에서 시행하던
+                    철근가공조립은 새로운 시스템에 의한철근자동화공장 가공으로
+                    변화해 가고 있습니다.
                   </p>
-                  <h3 className="text-xl font-semibold mb-2">
-                    Vision & Mission
-                  </h3>
                   <p className="mb-4">
-                    Our vision is to be the global leader in innovative steel
-                    solutions. Our mission is to revolutionize the construction
-                    industry through innovative steel processing solutions,
-                    ensuring safety, efficiency, and sustainability in every
-                    project we undertake.
+                    철공사에서의 가공은 협소한 장소로 인하여 철근가공 적정 시
+                    많은 문제가 발생하고, 소음발생 등으로 민원의 발생소지가
+                    다분하며, 공기 단축을 시공되의 미비로 자재의 낭비, 원자재
+                    관리 불량 등으로 공사에 많은 어려움이 되고 있습니다.
                   </p>
-                  <h3 className="text-xl font-semibold mb-2">
-                    Organizational Structure
-                  </h3>
-                  <div className="bg-gray-200 h-48 flex items-center justify-center mb-4">
-                    <p>Organizational Chart Placeholder</p>
-                  </div>
+                  <p className="mb-4">
+                    당사는 상기와 같은 공사현장의 빠른 변화들에 대응하고
+                    공사현장에서의 문제를 해결하기 위하여 1991년부터 철근가공
+                    공장을 운영하고 있으며, 이제는 20년 이상의 경험과 Know-how를
+                    축적하여 보다 좋은 품질과 정성으로 각 현장에 보답 하고자
+                    합니다.
+                  </p>
+                  <p className="mb-4">
+                    또한 현장에서 요구하는 고품질의 원가절감을 위하여 자동화
+                    설비 및 선진화된 생산 공정 개선에 최선을 다하고 있습니다.
+                  </p>
+                  <p>
+                    부디 폐사의 정성이 귀사의 일익번창에 미력이나마 보탬이 되길
+                    희망하며 귀사의 무궁한 발전을 기원 합니다.
+                  </p>
+                  <p>광신철강산업(주)</p>
                 </div>
                 <Card>
                   <CardHeader>
-                    <CardTitle>Certifications & Awards</CardTitle>
+                    <CardTitle>인증서 및 수상 내역</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-2">
-                      <li>ISO 9001:2015 Certification</li>
-                      <li>Korean Industrial Standard (KS) Certification</li>
-                      <li>
-                        Best Supplier Award 2022 - Korean Construction
-                        Association
-                      </li>
-                      <li>Innovation in Steel Processing Award 2021</li>
-                      <li>Green Technology Certification 2020</li>
+                      <li>ISO 9001:2015 인증</li>
+                      <li>한국 산업 표준 (KS) 인증</li>
+                      <li>2022년 최우수 공급업체 상 - 한국건설협회</li>
+                      <li>2021년 철근가공 혁신상</li>
+                      <li>2020년 녹색 기술 인증</li>
                     </ul>
                   </CardContent>
                 </Card>
