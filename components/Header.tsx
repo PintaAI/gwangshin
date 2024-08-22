@@ -8,13 +8,13 @@ import { Button } from "@/components/ui/button";
 import { MenuIcon } from 'lucide-react';
 
 const navItems = [
-  { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
-  { name: "Products", path: "/products" },
-  { name: "Projects", path: "/projects" },
-  { name: "Quality", path: "/quality" },
-  { name: "News", path: "/news" },
-  { name: "Contact", path: "/contact" },
+  { name: "홈", path: "/" },
+  { name: "회사소개", path: "/about" },
+  { name: "제품", path: "/products" },
+  { name: "프로젝트", path: "/projects" },
+  { name: "품질", path: "/quality" },
+  { name: "뉴스", path: "/news" },
+  { name: "연락처", path: "/contact" },
 ];
 
 const Header: React.FC = () => {
@@ -44,6 +44,7 @@ const Header: React.FC = () => {
         <button
           className="md:hidden p-2"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="메뉴 열기"
         >
           <MenuIcon size={24} />
         </button>

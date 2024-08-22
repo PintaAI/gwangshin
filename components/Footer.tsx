@@ -51,9 +51,11 @@ const Footer: React.FC = () => {
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-2">Contact Information</h3>
-            <p>Email: info@gwangshin.com</p>
-            <p>Phone: +82-2-1234-5678</p>
-            <p>Address: 123 Steel Street, Seoul, South Korea</p>
+            <p>본사: 대전광역시 동구 대전로 1020번길 10</p>
+            <p>TEL: (042)636-9922</p>
+            <p>1공장: 충북 청주시 서원구 현도면 청남로 692</p>
+            <p>TEL: (043)265-9921~4</p>
+            <p>FAX: (043)265-9923</p>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
@@ -80,7 +82,7 @@ const Footer: React.FC = () => {
           </form>
         </div>
         <div className="mt-8 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Gwangshin Steel Industry Co., Ltd. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} 광신철강산업(주). All rights reserved.</p>
         </div>
       </div>
     </footer>
