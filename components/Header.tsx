@@ -15,6 +15,8 @@ const navItems = [
   { name: "품질", path: "/quality" },
   { name: "뉴스", path: "/news" },
   { name: "연락처", path: "/contact" },
+  // Added a new gallery tab
+  { name: "갤러리", path: "/gallery" },
 ];
 
 const Header: React.FC = () => {

@@ -1,11 +1,20 @@
-// app/components/Footer.tsx
+// components/Footer.tsx
 "use client";
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 const quickLinks = [
   { name: "Home", path: "/" },
@@ -16,6 +25,45 @@ const quickLinks = [
   { name: "News", path: "/news" },
   { name: "Contact", path: "/contact" },
 ];
+
+const certificates = [
+  { id: 1, src: "/image/certificate1.png", title: "Certificate 1" },
+  { id: 2, src: "/image/certificate2.png", title: "Certificate 2" },
+  { id: 3, src: "/image/certificate3.png", title: "Certificate 3" },
+];
+
+const CertificateModal: React.FC<{ certificate: { id: number; src: string; title: string } }> = ({ certificate }) => {
+  return (
+    <Dialog>
+      <DialogTrigger asChild>
+        <Image
+          src={certificate.src}
+          alt={certificate.title}
+          width={100}
+          height={100}
+          className="cursor-pointer hover:opacity-80 transition-opacity"
+        />
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-[425px]">
+        <DialogHeader>
+          <DialogTitle>{certificate.title}</DialogTitle>
+          <DialogDescription>Click the image to view in full size</DialogDescription>
+        </DialogHeader>
+        <div className="mt-4">
+          <a href={certificate.src} target="_blank" rel="noopener noreferrer">
+            <Image
+              src={certificate.src}
+              alt={certificate.title}
+              width={375}
+              height={500}
+              className="w-full h-auto"
+            />
+          </a>
+        </div>
+      </DialogContent>
+    </Dialog>
+  );
+};
 
 const Footer: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -58,11 +106,11 @@ const Footer: React.FC = () => {
             <p>FAX: (043)265-9923</p>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
+            <h3 className="text-lg font-semibold mb-2">Certificates</h3>
             <div className="flex space-x-4">
-              <Button variant="ghost">LinkedIn</Button>
-              <Button variant="ghost">Twitter</Button>
-              <Button variant="ghost">Facebook</Button>
+              {certificates.map((cert) => (
+                <CertificateModal key={cert.id} certificate={cert} />
+              ))}
             </div>
           </div>
         </div>
