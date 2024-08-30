@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const DeliveryPerformanceTable = () => {
   const performanceData = [
@@ -104,8 +105,8 @@ export default function ProjectsPage() {
       </p>
 
       <div className="grid grid-cols-2 gap-4">
-        <img src="/images/construction.png" alt="현장생산과정" />
-        <img src="/images/factory.png" alt="공장생산과정" />
+        <Image src="/images/construction.png" alt="현장생산과정" width={500} height={300} />
+        <Image src="/images/factory.png" alt="공장생산과정" width={500} height={300} />
       </div>
 
       <h2 className="text-2xl font-semibold mb-4 mt-8">생산 공정</h2>

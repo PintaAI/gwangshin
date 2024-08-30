@@ -1,6 +1,7 @@
 // app/page.tsx
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import PerformanceChart from '@/components/PerformanceChart';
@@ -18,11 +19,12 @@ export default function HomePage() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="mb-6 bg-gray-200 h-64 flex items-center justify-center overflow-hidden">
-            <img
+          <div className="mb-6 bg-gray-200 h-64 flex items-center justify-center overflow-hidden relative">
+            <Image
               src="/image/banner.png"
               alt="Main Project Banner"
-              className="w-full h-full object-contain"
+              layout="fill"
+              objectFit="contain"
             />
           </div>
           <p className="mb-4">

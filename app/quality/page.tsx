@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function QualityPage() {
   return (
@@ -10,7 +11,7 @@ export default function QualityPage() {
 
       <h2 className="text-2xl font-semibold mt-8 mb-4">품질보증 기준</h2>
       <p className="mb-4">
-        기계식 이음방식은 KSD3504(철근콘크리트 봉강)에 규정하는 봉강(이하 "철근"으로 한다)을 기계적인 방법으로 연결하여 사용하는데 적용한다. 구조물 철근 콘크리트 공사에 사용하는 철근 및 부속자재 연결이음 또는 연결하고자 하는 철근의 단부를 UP SET(단부성형장치) 및 압연으로 정업한 후, 철조 ROLLING 또는 체이서에 의한 나사가공(KS B 0201 적용)을 하여, TAPPING(암나사가공) 가공된 COUPLER(소켓)를 이용하여 연결하는 기계식 이음방법이다.
+        기계식 이음방식은 KSD3504(철근콘크리트 봉강)에 규정하는 봉강(이하 &quot;철근&quot;으로 한다)을 기계적인 방법으로 연결하여 사용하는데 적용한다. 구조물 철근 콘크리트 공사에 사용하는 철근 및 부속자재 연결이음 또는 연결하고자 하는 철근의 단부를 UP SET(단부성형장치) 및 압연으로 정업한 후, 철조 ROLLING 또는 체이서에 의한 나사가공(KS B 0201 적용)을 하여, TAPPING(암나사가공) 가공된 COUPLER(소켓)를 이용하여 연결하는 기계식 이음방법이다.
       </p>
 
       <h3 className="text-xl font-semibold mt-6 mb-3">시험의 종류 및 기준</h3>
@@ -69,7 +70,7 @@ export default function QualityPage() {
       </p>
 
       <div className="mt-6">
-        <img src="/images/quality_test_setup.png" alt="Quality Test Setup" className="max-w-full h-auto" />
+        <Image src="/images/quality_test_setup.png" alt="Quality Test Setup" width={800} height={600} />
         <p className="text-sm text-gray-600 mt-2">품질 테스트 설정 이미지</p>
       </div>
     </div>

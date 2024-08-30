@@ -1,5 +1,6 @@
 // app/(tabs)/about/page.tsx
 import React from 'react';
+import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import CompanyTimeline from './CompanyTimeline';
@@ -88,10 +89,12 @@ export default function AboutPage() {
         </CardHeader>
         <CardContent className="prose max-w-none">
           <div className="clearfix">
-            <img 
+            <Image 
               src="/image/sajang.png" 
               alt="대표이사 김용산" 
-              className="w-32 h-auto rounded-lg float-left mr-4 mb-2 sm:w-32 sm:mr-6"
+              width={128}
+              height={128}
+              className="rounded-lg float-left mr-4 mb-2 sm:mr-6"
               style={{ shapeOutside: 'margin-box' }}
             />
             <div>

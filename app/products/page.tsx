@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import React from 'react'
 import Image from 'next/image'
@@ -85,7 +85,7 @@ export default function ProductsPage() {
       <ul className="list-disc pl-6 mb-4">
         <li>안전성
           <ul className="list-disc pl-6">
-            <li>결합 이음과 비교하여 배근 간격의 확보가 우수하여, CON'C 타설 시 공간 활용이 용이하다.</li>
+            <li>결합 이음과 비교하여 배근 간격의 확보가 우수하여, CONC 타설 시 공간 활용이 용이하다.</li>
             <li>철근 모재의 항복강도 보다 125% 이상의 인장 또는 압축강도를 발휘한다.</li>
             <li>철근의 Stress(응력) 중심이 동일 선상에 위치함으로 구조적으로 매우 안전하다.</li>
           </ul>
@@ -147,7 +147,7 @@ export default function ProductsPage() {
       <p className="italic text-sm">참고: 각 TYPE별 상세 도식 및 현장 적용 사진은 별도의 이미지 자료를 참조하세요.</p>
     </div>
   </TabsContent>
-        <TabsContent value="coupler">
+  <TabsContent value="coupler">
           <h2 className="text-2xl font-bold mb-4">압연 나사식 철근이음 커플러 치수</h2>
           <div className="mb-8">
             <div className="flex flex-col md:flex-row mb-6">
@@ -221,31 +221,31 @@ export default function ProductsPage() {
           </div>
         </TabsContent>
         <TabsContent value="cip">
-      <h2 className="text-2xl font-bold mb-4">CIP 공법이란</h2>
-      <p className="mb-4">
-        CIP 공법은 (Cast.In.Place Pile)의 약자로 주형식 현장타설 말뚝 중의 하나다. 지반 천공 장비를 사용하여
-        일정 심도까지 천공해 토사를 배출시킨 후에 공내 H-Pile 또는 철근망을 삽입하고 콘크리트 또는 모르타르
-        (Mortar)를 타설하는 공법이다. CIP공법은 가설흙막이, 몰막이, 연속벽체 등으로 사용된다.
-      </p>
+          <h2 className="text-2xl font-bold mb-4">CIP 공법이란</h2>
+          <p className="mb-4">
+            CIP 공법은 (Cast.In.Place Pile)의 약자로 주형식 현장타설 말뚝 중의 하나다. 지반 천공 장비를 사용하여
+            일정 심도까지 천공해 토사를 배출시킨 후에 공내 H-Pile 또는 철근망을 삽입하고 콘크리트 또는 모르타르
+            (Mortar)를 타설하는 공법이다. CIP공법은 가설흙막이, 몰막이, 연속벽체 등으로 사용된다.
+          </p>
 
-      <h3 className="text-xl font-semibold mb-4">CIP 공법순서</h3>
-      <ol className="list-decimal pl-6 space-y-2">
-        <li>측량 및 가이드빔 설치</li>
-        <li>철근망 가공 및 조립</li>
-        <li>강관말임 및 굴착</li>
-        <li>철근망 삽입</li>
-        <li>콘크리트타설</li>
-        <li>케이싱 인발 및 인접공</li>
-        <li>장비 해체 및 철수</li>
-      </ol>
+          <h3 className="text-xl font-semibold mb-4">CIP 공법순서</h3>
+          <ol className="list-decimal pl-6 space-y-2">
+            <li>측량 및 가이드빔 설치</li>
+            <li>철근망 가공 및 조립</li>
+            <li>강관말임 및 굴착</li>
+            <li>철근망 삽입</li>
+            <li>콘크리트타설</li>
+            <li>케이싱 인발 및 인접공</li>
+            <li>장비 해체 및 철수</li>
+          </ol>
 
-      <div className="grid grid-cols-4 gap-4 mt-8">
-        <ReactPlayer url="/videos/IMG_1886.mp4" controls width="100%" />
-        <ReactPlayer url="/videos/IMG_1887.mp4" controls width="100%" />
-        <ReactPlayer url="/videos/IMG_3864.mp4" controls width="100%" />
-        <ReactPlayer url="/videos/IMG_3865.mp4" controls width="100%" />
-      </div>
-    </TabsContent>
+          <div className="grid grid-cols-4 gap-4 mt-8">
+            <ReactPlayer url="/videos/IMG_1886.mp4" controls width="100%" />
+            <ReactPlayer url="/videos/IMG_1887.mp4" controls width="100%" />
+            <ReactPlayer url="/videos/IMG_3864.mp4" controls width="100%" />
+            <ReactPlayer url="/videos/IMG_3865.mp4" controls width="100%" />
+          </div>
+        </TabsContent>
       </Tabs>
     </div>
   );
